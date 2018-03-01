@@ -1,0 +1,194 @@
+# $Id: run.mac 68015 2013-03-13 13:27:27Z gcosmo $
+#
+# Macro file for "AnaEx01.cc"
+# 
+# can be run in batch, without graphic
+# or interactively: Idle> /control/execute run.mac
+#
+/control/verbose 2
+/run/verbose 2
+/event/verbose 0
+/tracking/verbose 0
+
+/gps/particle gamma
+
+/gps/pos/type Plane
+/gps/pos/shape Circle
+#/gps/pos/centre 0. 0. 5.53 mm
+/gps/pos/centre -13.25 0. -2.525 mm
+#/gps/pos/halfx 1 cm
+#/gps/pos/halfy 1 cm
+/gps/pos/radius 0.5 mm
+
+/gps/ang/type iso
+/gps/ang/mintheta  0
+/gps/ang/maxtheta  1.571
+#/gps/ang/surfnorm
+
+/gps/ene/type User
+/gps/hist/type energy
+
+
+# Gamma-Decay Am-241
+/gps/hist/point 0.        0.
+/gps/hist/point 0.0035  16416.5714     
+/gps/hist/point 0.0036  21368.0102     
+/gps/hist/point 0.0037  39498.6801     
+/gps/hist/point 0.0039  69909.2291     
+/gps/hist/point 0.0042  21881.7822     
+/gps/hist/point 0.0044  5497.9273      
+/gps/hist/point 0.0046  3871.8914      
+/gps/hist/point 0.0048  2913.4336      
+/gps/hist/point 0.0051  3631.4598      
+/gps/hist/point 0.0053  4939.3939      
+/gps/hist/point 0.0056  6793.4373      
+/gps/hist/point 0.0061  12166.6294     
+/gps/hist/point 0.0063  16189.6638     
+/gps/hist/point 0.0066  25220.2929     
+/gps/hist/point 0.0070  24076.9439     
+/gps/hist/point 0.0073  46033.4484     
+/gps/hist/point 0.0077  49219.4297     
+/gps/hist/point 0.0080  30065.6922     
+/gps/hist/point 0.0081  12238.6825     
+/gps/hist/point 0.0082  7392.3879      
+/gps/hist/point 0.0086  4617.7181      
+/gps/hist/point 0.0091  5188.8855      
+/gps/hist/point 0.0096  5986.1915      
+/gps/hist/point 0.0100  7934.0759      
+/gps/hist/point 0.0103  13445.6472     
+/gps/hist/point 0.0108  14699.1345     
+/gps/hist/point 0.0113  30354.4994     
+/gps/hist/point 0.0117  31294.8168     
+/gps/hist/point 0.0119  23891.4898     
+/gps/hist/point 0.0121  12243.8454     
+/gps/hist/point	0.0123  8625.0998      
+/gps/hist/point 0.0125  11603.6365     
+/gps/hist/point 0.0127  23167.1057     
+/gps/hist/point 0.0128  71711.0045     
+/gps/hist/point 0.0129  34784.6131     
+/gps/hist/point 0.0130  151285.6588    
+/gps/hist/point 0.0133  410777.6338    
+/gps/hist/point 0.0137  406697.7329    
+/gps/hist/point 0.0138  245652.8643    
+/gps/hist/point 0.0140  186828.9253    
+/gps/hist/point 0.0141  76890.0266     
+/gps/hist/point 0.0143  12733.6440     
+/gps/hist/point 0.0144  9166.4622      
+/gps/hist/point 0.0146  5578.9042      
+/gps/hist/point 0.0149  9077.9718      
+/gps/hist/point 0.0150  15207.8396     
+/gps/hist/point 0.0153  26924.1231     
+/gps/hist/point 0.0157  40295.1390     
+/gps/hist/point 0.0160  96258.4539     
+/gps/hist/point 0.0164  193023.1099    
+/gps/hist/point 0.0167  198946.6059    
+/gps/hist/point 0.0169  432082.7299    
+/gps/hist/point 0.0172  543426.0828    
+/gps/hist/point 0.0176  363230.2685    
+/gps/hist/point 0.0179  131573.4594    
+/gps/hist/point 0.0181  32346.0145     
+/gps/hist/point 0.0184  13313.9748     
+/gps/hist/point	0.0187  8254.5620      
+/gps/hist/point 0.0187  6678.8500      
+/gps/hist/point 0.0190  4603.4578      
+/gps/hist/point 0.0192  6448.1848      
+/gps/hist/point 0.0195  15069.4995     
+/gps/hist/point 0.0195  11207.6115     
+/gps/hist/point 0.0197  29550.2537     
+/gps/hist/point 0.0199  71610.2578     
+/gps/hist/point 0.0202  131019.6960    
+/gps/hist/point 0.0207  105746.3954    
+/gps/hist/point 0.0209  70254.0723     
+/gps/hist/point 0.0212  56466.2745     
+/gps/hist/point 0.0214  22002.0886     
+/gps/hist/point 0.0215  31259.6391     
+/gps/hist/point 0.0219  12966.6873     
+/gps/hist/point 0.0222  8219.0500      
+/gps/hist/point 0.0224  4075.1900      
+/gps/hist/point 0.0225  3065.5451      
+/gps/hist/point 0.0230  1148.0597      
+/gps/hist/point 0.0233  1291.9694      
+/gps/hist/point 0.0237  1803.8533      
+/gps/hist/point 0.0242  2354.5286      
+/gps/hist/point 0.0246  3635.0353      
+/gps/hist/point 0.0249  4838.3613      
+/gps/hist/point 0.0250  6298.5558      
+/gps/hist/point 0.0252  13284.0597     
+/gps/hist/point 0.0254  39794.0918     
+/gps/hist/point 0.0257  106108.7723    
+/gps/hist/point 0.0261  114285.0215    
+/gps/hist/point 0.0263  67551.7552     
+/gps/hist/point 0.0265  12623.1336     
+/gps/hist/point 0.0266  18332.0950     
+/gps/hist/point 0.0268  1378.4767      
+/gps/hist/point 0.0269  2843.4284      
+/gps/hist/point 0.0272  573.8675       
+/gps/hist/point 0.0274  438.1504       
+/gps/hist/point	0.0284  318.5120       
+/gps/hist/point 0.0290  343.2481       
+/gps/hist/point 0.0294  348.6956       
+/gps/hist/point 0.0298  372.8289       
+/gps/hist/point 0.0301  389.9300       
+/gps/hist/point 0.0307  492.8139       
+/gps/hist/point 0.0312  626.8674       
+/gps/hist/point 0.0317  648.8356       
+/gps/hist/point 0.0321  1182.9587      
+/gps/hist/point 0.0323  3017.2291      
+/gps/hist/point 0.0326  5874.3088      
+/gps/hist/point 0.0330  6145.4831      
+/gps/hist/point 0.0333  2275.1294      
+/gps/hist/point 0.0335  1315.6142      
+/gps/hist/point 0.0338  480.0536       
+/gps/hist/point 0.0344  460.3571       
+/gps/hist/point 0.0350  461.0696       
+/gps/hist/point 0.0354  451.6386       
+/gps/hist/point 0.0364  505.3305       
+/gps/hist/point	0.0372  655.4367       
+/gps/hist/point 0.0379  804.5474       
+/gps/hist/point 0.0385  1014.7441      
+/gps/hist/point 0.0391  1172.0329      
+/gps/hist/point 0.0394  1398.3865      
+/gps/hist/point 0.0406  2297.9530      
+/gps/hist/point 0.0410  2712.2342      
+/gps/hist/point 0.0421  3488.9953      
+/gps/hist/point 0.0425  6133.3992      
+/gps/hist/point 0.0426  5192.6073      
+/gps/hist/point 0.0431  5815.1468      
+/gps/hist/point 0.0434  4725.4236      
+/gps/hist/point 0.0436  3529.7809      
+/gps/hist/point 0.0444  2951.1122      
+/gps/hist/point 0.0453  3132.1995      
+/gps/hist/point 0.0458  3578.2466      
+/gps/hist/point 0.0464  3999.6989      
+/gps/hist/point 0.0468  4468.9055      
+/gps/hist/point 0.0477  8880.7930      
+/gps/hist/point 0.0482  10727.3847     
+/gps/hist/point 0.0486  11703.5761     
+/gps/hist/point 0.0490  18778.1508     
+/gps/hist/point 0.0494  17540.4303     
+/gps/hist/point 0.0496  13196.5725     
+/gps/hist/point 0.0498  9925.6724      
+/gps/hist/point 0.0505  9624.7284      
+/gps/hist/point	0.0509  10405.7897     
+/gps/hist/point 0.0523  19305.4987     
+/gps/hist/point 0.0534  19370.7479     
+/gps/hist/point 0.0543  20286.8093     
+/gps/hist/point 0.0550  24763.5403     
+/gps/hist/point 0.0555  30218.2462     
+/gps/hist/point 0.0561  36605.8772     
+/gps/hist/point 0.0569  39040.4544     
+/gps/hist/point 0.0578  22540.6113     
+/gps/hist/point 0.0580  93143.2903     
+/gps/hist/point 0.0581  297956.5305    
+/gps/hist/point 0.0582  932458.1961    
+/gps/hist/point 0.0585  1681282.9430   
+/gps/hist/point 0.0590  1727041.0812   
+/gps/hist/point 0.0592  914927.5262    
+/gps/hist/point 0.0595  259388.5726    
+/gps/hist/point 0.0597  16189.6638     
+/gps/hist/point 0.0598  41584.3001     
+/gps/hist/point 0.0600  4113.7574      
+/gps/hist/point 0.0604  862.8950       
+/gps/hist/point 0.0608  618.2609       
+
+/run/beamOn 100
